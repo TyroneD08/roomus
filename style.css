@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #a5cfad, #1a1742);
+  color: #ffffff;
+  min-height: 200vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 60px;
+  background: rgba(22, 19, 49, 0.98);
+  backdrop-filter: blur(3px);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 5vw;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo-icon {
+  height: 100%;
+}
+
+.logo-icon img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #a5cfad;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 90vh;
+  padding: 60px 2rem 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(to right, #615294, #00aaff);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #d6d6d6;
+  color: white;
+  background: linear-gradient(to right, #615294, #00aaff);
+}
+
+.btn.primary:hover {
+  background-image: none;
+  background: #1a1742;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: #e8e8e8;
+}
+
+.btn.secondary:hover {
+  background: #1a1742;
+  color: white;
+}
+
+.section-tag {
+    font-size: 0.9rem;
+    color: #1a1742;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.how-it-works-section {
+    padding: 6rem 0;
+}
+
+.how-it-works-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.step-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a69ff;
+    margin-bottom: 0.5rem;
+}
+
+.step-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.step-card p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.compatibility-section {
+    padding: 6rem 0;
+}
+
+.compatibility-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 180px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-section {
+    padding: 6rem 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-form-container {
+    max-width: 800px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 150px;
+    display: block;
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: left;
+    color: #bbb;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p:first-child {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
