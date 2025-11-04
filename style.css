@@ -6,7 +6,7 @@
 }
 
 body {
-  background: radial-gradient(circle at top left, #a5cfad, #1a1742);
+  background: radial-gradient(circle at top left, #d0b689, #27235e);
   color: #ffffff;
   min-height: 200vh;
 }
@@ -17,9 +17,11 @@ body {
   margin: 0 auto;
 }
 
+
+
 .header {
   height: 60px;
-  background: rgba(22, 19, 49, 0.98);
+  background: #292929;
   backdrop-filter: blur(3px);
   padding: 0;
   position: sticky;
@@ -37,11 +39,7 @@ body {
 }
 
 .logo {
-  height: 100%;
-}
-
-.logo-icon {
-  height: 100%;
+  height: 75px;
 }
 
 .logo-icon img {
@@ -62,22 +60,39 @@ body {
   color: #a5cfad;
 }
 
+
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   min-height: 90vh;
   padding: 60px 2rem 2rem;
+  background-image: url('img/20220423_SK_PorchFest_042322_0135.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
 }
 
 .badge {
   display: inline-block;
-  background: linear-gradient(to right, #615294, #00aaff);
+  background: linear-gradient(to right, #d0b689, #d0b689);
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 6px;
@@ -94,7 +109,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  color: #bbb;
+  color: #ccc;
   margin-bottom: 2rem;
 }
 
@@ -116,30 +131,28 @@ body {
 }
 
 .btn.primary {
-  background: #d6d6d6;
+  background: linear-gradient(to right, #d0b689, #d0b689);
   color: white;
-  background: linear-gradient(to right, #615294, #00aaff);
 }
 
 .btn.primary:hover {
-  background-image: none;
-  background: #1a1742;
+  background: #a5cfad;
 }
 
 .btn.secondary {
-  background: transparent;
-  border: 2px solid white;
+  background:#27235e;
   color: #e8e8e8;
 }
 
 .btn.secondary:hover {
-  background: #1a1742;
+  background: #a5cfad;
   color: white;
 }
 
+
 .section-tag {
     font-size: 0.9rem;
-    color: #1a1742;
+    color: #a5cfad;
     font-weight: 600;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
@@ -171,7 +184,7 @@ body {
 .step-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #4a69ff;
+    color: #d06be5;
     margin-bottom: 0.5rem;
 }
 
@@ -228,6 +241,19 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
 .contact-section {
     padding: 6rem 0;
 }
@@ -275,6 +301,7 @@ body {
     display: block;
 }
 
+
 .footer {
     padding: 2rem 0;
     text-align: left;
@@ -285,7 +312,7 @@ body {
 
 .footer p:first-child {
     font-weight: 600;
-    color: #fff;
+    color: #e7e7e7;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
